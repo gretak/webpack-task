@@ -4,7 +4,7 @@
   "description": "basic webpack run environment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
     "react"
   ],
   "author": "Greta Kavaliauskaite",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.0.0",
+    "webpack": "^2.6.1"
+  }
 }
