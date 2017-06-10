@@ -4,7 +4,8 @@
   "description": "basic webpack run environment",
   "main": "index.js",
   "scripts": {
-  
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "author": "Greta Kavaliauskaite",
   "license": "ISC",
   "devDependencies": {
-    "babel-loader": "^7.0.0",
-    "webpack": "^2.6.1"
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.2.0"
   }
 }
