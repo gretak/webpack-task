@@ -35,8 +35,10 @@ var path = require('path');
         })
     ],
      devServer: {
-        host: "localhost",
+        contentBase: path.join(__dirname, "build"),
         port: 5000,
-        inline: true
+        compress: true,
+        stats: "errors-only",
+        open: true
      }
 };
