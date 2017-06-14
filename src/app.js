@@ -1,3 +1,9 @@
 const css = require('./sass/app.scss');
 
-document.write("It works 2.");
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <h1>Hello, world</h1>,
+  document.getElementById('app')
+  );

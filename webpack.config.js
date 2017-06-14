@@ -1,6 +1,6 @@
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
 
     module.exports = {
       entry: ['./src/app.js'],
@@ -18,6 +18,11 @@ var path = require('path');
                   use: ["css-loader", "sass-loader"],
                   publicPath: "/build"
                 })
+            },
+            {
+                test:/\.js$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
             }
         ]
     },
